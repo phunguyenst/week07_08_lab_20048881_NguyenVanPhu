@@ -27,7 +27,7 @@ public class ProductController {
         @RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size){
         int currentPage = page.orElse(1);
         int pageSize= size.orElse(10);
-        Page<Product> productPage = productService.findAll(currentPage - 1, pageSize , "id", "asc");
+        Page<Product> productPage = productService.findAll(currentPage - 1, pageSize , "product_id", "asc");
         model.addAttribute("productPage", productPage);
         int totalPages = productPage.getTotalPages();
         if(totalPages >0){
