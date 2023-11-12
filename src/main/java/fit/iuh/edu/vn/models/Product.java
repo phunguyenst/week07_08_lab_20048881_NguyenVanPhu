@@ -21,7 +21,7 @@ public class Product {
     @Column(name = "name", length = 150, nullable = false)
     private String name;
 
-    @Column(name = "description", length = 250, nullable = false)
+    @Column(name = "description", columnDefinition = "text", nullable = false)
     private String description;
     @Column(name = "unit", length = 25, nullable = false)
     private String unit;
@@ -51,6 +51,17 @@ public class Product {
         this.unit = unit;
         this.manufacturer = manufacturer;
         this.status = status;
+    }
+
+    public Product(String name, String description, String unit, String manufacturer, ProductStatus status, List<ProductImage> productImageList, List<OrderDetail> orderDetails, List<ProductPrice> productPrices) {
+        this.name = name;
+        this.description = description;
+        this.unit = unit;
+        this.manufacturer = manufacturer;
+        this.status = status;
+        this.productImageList = productImageList;
+        this.orderDetails = orderDetails;
+        this.productPrices = productPrices;
     }
 
     public long getProduct_id() {
@@ -128,14 +139,15 @@ public class Product {
     @Override
     public String toString() {
         return "Product{" +
-                "id=" + product_id +
+                "product_id=" + product_id +
                 ", name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 ", unit='" + unit + '\'' +
                 ", manufacturer='" + manufacturer + '\'' +
                 ", status=" + status +
+                ", productImageList=" + productImageList +
+                ", orderDetails=" + orderDetails +
+                ", productPrices=" + productPrices +
                 '}';
     }
-
-
 }
