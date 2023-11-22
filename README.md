@@ -13,7 +13,7 @@
 - Thống kê order theo ngày, theo khoảng thời gian.
 - Thống kê order theo nhân viên bán hàng trong 1 khoảng thời gian.
   -**Diagram:**
-- ![img_12.png](img_12.png)
+- ![img_12.png](anh%20minh%20chung%2Fimg_12.png)
 
 ## Front-end
 - **Ý tưởng:** Làm dựa trên mô hình MVC. <br>
@@ -36,29 +36,29 @@
 - [Login](#login)
 
 ## list Product Manager
-![img.png](img.png)
+![img.png](anh%20minh%20chung%2Fimg.png)
 
-![img_1.png](img_1.png)
+![img_1.png](anh%20minh%20chung%2Fimg_1.png)
 ## add-product
-![img_2.png](img_2.png)
+![img_2.png](anh%20minh%20chung%2Fimg_2.png)
 ## update-product
-![img_3.png](img_3.png)
+![img_3.png](anh%20minh%20chung%2Fimg_3.png)
 
-![img_4.png](img_4.png)
+![img_4.png](anh%20minh%20chung%2Fimg_4.png)
 ## delete-product
-![img_5.png](img_5.png)
+![img_5.png](anh%20minh%20chung%2Fimg_5.png)
 
-![img_6.png](img_6.png)
+![img_6.png](anh%20minh%20chung%2Fimg_6.png)
 ## staticStatus-product
-![img_7.png](img_7.png)
+![img_7.png](anh%20minh%20chung%2Fimg_7.png)
 ## staticProductPrice-product
-![img_8.png](img_8.png)
+![img_8.png](anh%20minh%20chung%2Fimg_8.png)
 ## login
-![img_9.png](img_9.png)
+![img_9.png](anh%20minh%20chung%2Fimg_9.png)
 ## product-page
-![img_10.png](img_10.png)
+![img_10.png](anh%20minh%20chung%2Fimg_10.png)
 ## checkout-page
-![img_11.png](img_11.png)
+![img_11.png](anh%20minh%20chung%2Fimg_11.png)
 **video demo**
 <br>
 -Local: [2023-11-17 18-00-17.mp4](video%20minh%20chung%2F2023-11-17%2018-00-17.mp4)
