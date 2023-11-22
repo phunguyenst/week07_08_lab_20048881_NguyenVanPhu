@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Product</title>
+</head>
+<body>
+<h2>Update Product</h2>
+
+<form action="/update" method="post" th:object="${product}">
+    <input type="hidden" th:field="*{product_id}" />
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" th:field="*{name}" required />
+
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" th:field="*{description}" required></textarea>
+
+    <!-- Add other fields as needed -->
+    <label for="unit">Unit:</label>
+    <input type="text" id="unit" name="unit" th:field="*{unit}" required />
+
+    <label for="manufacturer">Manufacturer:</label>
+    <input type="text" id="manufacturer" name="manufacturer" th:field="*{manufacturer}" required />
+
+    <label for="status">Status:</label>
+    <select id="status" name="status" th:field="*{status}" required>
+        <option value="ACTIVE" th:selected="${product.status == 'ACTIVE'}">Active</option>
+        <option value="IN_ACTIVE" th:selected="${product.status == 'IN_ACTIVE'}">In Active</option>
+        <option value="TERMINATED" th:selected="${product.status == 'TERMINATED'}">Terminated</option>
+
+
+    </select>
+
+    <button type="submit">Update Product</button>
+</form>
+</body>
+</html>
